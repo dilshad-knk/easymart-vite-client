@@ -31,7 +31,7 @@ const useProductCategories = () => {
     }
   };
 
-  console.log(categories);
+
 
   return categories;
 };

@@ -40,7 +40,7 @@ const useGetProducts = (initialCategoryName, initialPage = 1, limit,keyword) => 
 
     fetchProducts();
   }, [categoryName, currentPage, limit,query]);
-  console.log(products);
+
 
   const updateCategoryName = (newCategoryName) => {
     setCategoryName(newCategoryName);

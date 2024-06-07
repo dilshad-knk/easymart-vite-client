@@ -26,7 +26,7 @@ const SellerDashboard = () => {
     try {
       dispatch(sellerLogout());
       let res = await instance.post('/sellers/logout')
-      console.log(res,'log out res');
+      
     } catch (error) {
       console.error('Error logging out:', error);
     }

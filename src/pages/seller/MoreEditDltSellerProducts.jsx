@@ -16,7 +16,7 @@ export default function MoreEditDltSellerProducts() {
     const [product, setProduct] = useState([]);
     const [showAddProduct, setShowAddProduct] = useState(false);
 
-    console.log(product,'more');
+
 
     const handleAddProductClick = () => {
      

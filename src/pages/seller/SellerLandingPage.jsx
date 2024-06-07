@@ -26,7 +26,7 @@ function SellerPage() {
       
         let res = await instance.get('/sellers/verify',{withCredentials: true})
 
-         console.log(res);
+
         
          
           if(res.data.success){

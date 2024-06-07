@@ -33,9 +33,6 @@ function SignUp() {
 
   
   
-  
-  console.log(setstateError)
-
 
 
 

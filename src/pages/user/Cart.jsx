@@ -63,7 +63,7 @@ function Cart() {
         }
     };
 
-    console.log('dkmdkfmdsklfdkldfm');
+    
    
  
     

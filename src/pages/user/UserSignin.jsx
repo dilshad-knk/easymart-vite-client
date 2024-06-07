@@ -90,7 +90,7 @@ function UserSignin({ closeModal }) {
            },{withCredentials: true, 
           })
           
-          console.log(res,'resssss');
+        
           
           if (res.data.success){
            

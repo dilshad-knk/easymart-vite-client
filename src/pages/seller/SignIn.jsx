@@ -63,7 +63,7 @@ function SignIn() {
     const handleSubmit = async(e)=>{
 
       e.preventDefault();
-     console.log('submitted');
+    
       const isEmailValid = handleUserEmail({ target: { value: userEmail } });
       const isPasswordValid = handlePassword({ target: { value: userPassword } });
      
