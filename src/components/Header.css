@@ -1,0 +1,19 @@
+
+
+.bord-white{
+    border: 1px solid transparent; /* Set a transparent border initially */
+    transition: border-color 0.3s ease; /* Add a transition for smooth animation */
+  }
+
+.bord-white:hover,.activeLink {
+    border : 1px solid white !important;
+  }
+
+
+  .my-navbar {
+    position: sticky !important;
+    top: 0;
+    background-color: #ffffff; /* Customize as needed */
+    z-index: 1000; /* Adjust z-index as needed */
+  }
+  

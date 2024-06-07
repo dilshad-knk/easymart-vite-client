@@ -1,0 +1,11 @@
+.list-unstyled li a, .list-inline li a {
+
+    color : grey
+}
+
+
+.list-unstyled li a:hover,.list-inline li a:hover {
+  
+    color: rgb(212, 212, 212); 
+    text-decoration: none; 
+}
