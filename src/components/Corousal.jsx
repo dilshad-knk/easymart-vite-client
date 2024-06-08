@@ -52,7 +52,7 @@ const ImageCorousal = ({ img, text }) => {
       <>
  
         <img
-          className="d-block w-100"
+          className="d-block w-100 bg-secondary"
           style={{ maxHeight: "600px", objectFit: "cover" }}
           src={img}
           alt={text}
@@ -60,7 +60,7 @@ const ImageCorousal = ({ img, text }) => {
         />
    
        {!loaded && 
-       <Placeholder animation="glow">
+       <Placeholder animation="glow bg-secondary">
           <Placeholder className='bg-secondary' xs={12} style={{ height: "400px" }} />
         </Placeholder>}
     
