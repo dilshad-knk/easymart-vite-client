@@ -37,7 +37,7 @@ export default function MoreDetails() {
   const [modalShow, setModalShow] = useState(false);
   const dispatch = useDispatch();
   const userId = user.user.id;
-
+const navigate = useNavigate()
   const handleToggleModal = () => {
     setModalShow(!modalShow);
   };
@@ -67,7 +67,6 @@ export default function MoreDetails() {
       const response = await instance.get(`user/cart/fetch/${userId}`, {
         withCredentials: true,
       });
-      console.log(response, "cart fetch res");
       dispatch(addToCart(response.data));
     } catch (error) {
       console.error("Error fetching cart items:", error);
@@ -90,6 +89,16 @@ export default function MoreDetails() {
     }
   };
 
+  const handleCheckout = () => {
+    
+    const products = [ { productId: product,singleProduct: true }];
+  
+    navigate('/checkout', { state: { products, userId } });
+
+
+};
+
+
   return (
     <Container fluid>
       {product && (
@@ -109,10 +118,10 @@ export default function MoreDetails() {
             </Col>
             <Col className="flex-grow-1 border my-2 py-3 d-flex justify-content-center align-items-center">
               <div className="pe-5">
-                <Link to="/checkout">
+               
                  
-                  <Button className="px-3">Buy</Button>
-                </Link>
+                  <Button className="px-3" onClick={handleCheckout}>Buy</Button>
+              
               </div>
               <div className="ps-5">
                 <Button onClick={() => handleAddToCart(product._id)}>

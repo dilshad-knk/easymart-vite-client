@@ -20,7 +20,8 @@ const MainNavbar = () => {
   const expand = "lg";
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.themeStatus.darkMode);
-  const cart = useSelector((state) => state.user.user.cart);
+  const cart = useSelector(state => state.cart.cart);
+
   const [searchTerm, setSearchTerm] = useState('');
 
   const cartLength = cart ? cart.length : 0;

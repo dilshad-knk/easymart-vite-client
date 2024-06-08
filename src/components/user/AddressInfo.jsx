@@ -9,6 +9,7 @@ import { Button, Card, Col, Form, Modal, Row } from "react-bootstrap";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import { IoIosRadioButtonOff } from "react-icons/io";
 import {
   showFailureAlert,
   showSuccessAlert,
@@ -82,7 +83,7 @@ function AddressInfo() {
     setShowAddAddress(!showAddAddress);
   };
 
-  console.log(addresses);
+
   return (
     <>
       <Row>
@@ -93,12 +94,13 @@ function AddressInfo() {
                 <Card.Body>
                   <Card.Title className="d-flex justify-content-between align-items-center fw-bold">
                   {!item.isPrimary ? (
-                    <input
+                    <span
                       type="radio" name="option"
                       variant="outline-primary"
                       onClick={() => handleSetPrimaryAddress(item._id)}
                     > 
-                    </input>):
+                    <IoIosRadioButtonOff/>
+                    </span>):
                             <IoRadioButtonOn />
                            
                     }

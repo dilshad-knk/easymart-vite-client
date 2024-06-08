@@ -8,6 +8,7 @@ import instance from '../axios/axios';
 import { userAuthSuccess } from '../redux/userAuthenticate';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import { addToCart } from '../redux/cartSlice';
 
 function MainLayout() {
   const dispatch = useDispatch()
@@ -24,13 +25,11 @@ function MainLayout() {
          
           if(res.data.success){
            dispatch(userAuthSuccess(res.data))
+           dispatch(addToCart(res.data.user.cart));
 
-          
-  
         }
         
-        if (res.data.success === false) {
-        }
+    
   
       } catch (error) {
         console.error("Error occurred while checking user:", error);
