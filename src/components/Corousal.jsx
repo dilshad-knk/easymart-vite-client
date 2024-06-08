@@ -59,8 +59,9 @@ const ImageCorousal = ({ img, text }) => {
           onLoad={handleImageLoad}
         />
    
-       {!loaded && <Placeholder animation="glow">
-          <Placeholder xs={12} style={{ height: "400px" }} />
+       {!loaded && 
+       <Placeholder animation="glow">
+          <Placeholder className='bg-secondary' xs={12} style={{ height: "400px" }} />
         </Placeholder>}
     
     </>
