@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import useProductCategories from "../Utils/useProductCategories";
 import MainLayout from "../layouts/MainLayout";
-import App from "../pages/App";
-import CategorySection from "../pages/CategorySection";
-import MoreDetails from "../pages/MoreDetails";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AdminSignin from "../pages/admin/AdminSignin"
 import AdminProtected from "./ProtectedRoutes/AdminProtected";
@@ -11,8 +8,8 @@ import AdminDashboard from "../pages/admin/AdminDashboard";
 import NotFound from "../components/NotFound"
 import SellerRoutes from "./SellerRoutes";
 import SellerLayout from "../layouts/SellerLayout";
-import UserRoutes from "./UserRoutes";
 import Loading from "../components/Loading";
+import UserRoutes from "./UserRoutes";
 
 
 

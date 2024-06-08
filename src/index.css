@@ -12,6 +12,10 @@
     background-color: #f0f0f0;
     color: #333;
   }
+  .hover1:hover {
+    background-color: #0a0a0a;
+    color: #333;
+  }
 
   /* Chrome, Safari, Edge, Opera */
 input[type='number']::-webkit-outer-spin-button,
