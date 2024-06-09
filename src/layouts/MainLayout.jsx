@@ -32,8 +32,7 @@ function MainLayout() {
     
   
       } catch (error) {
-        console.error("Error occurred while checking user:", error);
-        console.log(error);
+     
       }
     };
     checkUser();
