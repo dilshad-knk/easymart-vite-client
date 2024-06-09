@@ -9,7 +9,6 @@ function Loading() {
           <Placeholder animation="glow">
             <Placeholder xs={12} style={{ height: "80px" }} />
           </Placeholder>
-          <h3>My free instance in Render deployement will spin down with inactivity, which can delay requests by 50 seconds or more</h3>
         </Col>
       </Row>
 
