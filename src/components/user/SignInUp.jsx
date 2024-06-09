@@ -5,6 +5,8 @@ import {  Link, useLocation } from 'react-router-dom';
 import UserSignin from '../../pages/user/UserSignin'
 import { useDispatch, useSelector } from 'react-redux';
 import { userLogout } from '../../redux/userAuthenticate';
+import { clearCart } from '../../redux/cartSlice';
+import instance from '../../axios/axios';
 
 
 export default function SignInUp() {
@@ -59,8 +61,13 @@ function UserDropdown ({user}){
     setIsOpen(false);
   };
 
-  const handleLogout = () => {
+  const handleLogout = async() => {
+    let res = await instance.post('/user/logout')
+
     dispatch(userLogout());
+    dispatch(clearCart());
+
+    
   }
 
   return(
