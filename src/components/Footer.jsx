@@ -8,8 +8,10 @@ import './Footer.css'
 function Footer() {
   return (
     <footer className="bg-dark text-light py-5">
+
       <Container>
         <Row>
+          <h3>Easy Mart</h3>
           <Col md={4}>
             <ul className="list-unstyled">
               <li className='py-1'><Link className='text-white text-decoration-none hover1' to="/" >Home</Link></li>
@@ -21,7 +23,7 @@ function Footer() {
             <ul className="list-unstyled">
               <li className='py-1'><Link className='text-white text-decoration-none hover1' to="/PrivacyPolicy">Privacy Policy</Link></li>
               <li className='py-1'><Link className='text-white text-decoration-none hover1' to="/TermsConditions">Terms & Conditions</Link></li>
-              <li className='py-1'><Link className='text-white text-decoration-none hover1' to="/ShippingPolicy">Shipping Policy</Link></li>
+              <li className='py-1'><Link className='text-white text-decoration-none hover1' to="/ShippingPolicy">Shipping and Delivery Policy</Link></li>
               <li className='py-1'><Link className='text-white text-decoration-none hover1' to="/CancellationRefundPolicies">Cancellation & Refund Policies</Link></li>
             </ul>
           </Col>

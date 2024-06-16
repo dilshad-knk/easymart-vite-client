@@ -8,7 +8,7 @@ const Contact = () => {
         <CardTitle className='fw-bold'>Contact Us:</CardTitle>
         <CardBody>
         
-        <p>Got a question or need assistance? We're here to help! You can reach out to us via email at  <a href="mailto:easy.help.mart@gmail.com">easy.help.mart@gmail.com</a> or through our online contact form. Our customer support team is available to assist you with any queries you may have, whether it's about product availability, order tracking, or general inquiries. Connect with us on social media to stay updated on the latest deals, promotions, and company news.</p>
+        <p>For any issues in utilizing our services, you may contact our helpdesk at <a href="tel:9843014221">9843014221</a> or email us at <a href="mailto:easy.help.mart@gmail.com">easy.help.mart@gmail.com</a>.</p>
         </CardBody>
     </Card>
   )
