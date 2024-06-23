@@ -81,7 +81,7 @@ function UserDropdown ({user}){
 
           <Dropdown.Menu className="dropdown-menu position-absolute"aria-labelledby="dropdown-custom-components" onMouseLeave={handleMouseLeave}  >
             <Dropdown.Item eventKey="1" className=' d-flex align-items-center'> <Link className='text-decoration-none d-flex align-items-center' to='/profile'> <FaRegUser className='me-1'/>Profile</Link></Dropdown.Item>
-            <Dropdown.Item eventKey="#link2" className=' d-flex align-items-center'> <Link className='text-decoration-none d-flex align-items-center' to='/profile#link2'> My Orders</Link></Dropdown.Item>
+            <Dropdown.Item eventKey="#link2" className=' d-flex align-items-center'> <Link className='text-decoration-none d-flex align-items-center' to='/profile#link1'> My Orders</Link></Dropdown.Item>
 
             <Dropdown.Divider />
             <Dropdown.Item  className='text-center'><Button  className='bg-danger' onClick={handleLogout}>Logout</Button></Dropdown.Item>
