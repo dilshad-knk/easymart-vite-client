@@ -14,10 +14,10 @@ import { addToCart } from '../../redux/cartSlice';
 function UserSignin({ closeModal }) {
 
     const [validated, setValidated] = useState(false);
-    const [userEmail,setUserEmail] = useState('');
+    const [userEmail,setUserEmail] = useState('dilshad@gmail.com');
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
-    const [userPassword,setuserPassword] = useState('');
+    const [userPassword,setuserPassword] = useState('12345@Aa');
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -77,10 +77,10 @@ function UserSignin({ closeModal }) {
         e.stopPropagation();
         setValidated(false);
       } else {
-        // If the form is valid, proceed with form submission
+       
         setValidated(true);
     
-        // request to your backend
+   
        
         try {
 
@@ -94,7 +94,7 @@ function UserSignin({ closeModal }) {
           
           if (res.data.success){
            
-            // closeModal()
+          
 
             showSuccessAlert(res.data.message);
             
@@ -138,6 +138,7 @@ function UserSignin({ closeModal }) {
                     <Form.Group className="mb-4" controlId="formGroupEmail">
                       <Form.Label className='fw-bold'>Email</Form.Label>
                       <Form.Control
+                       
                         className='shadow-none'
                         type="email"
                         placeholder="Enter Address"
@@ -151,6 +152,7 @@ function UserSignin({ closeModal }) {
                     <Form.Group className="mb-4" controlId="formGroupPassword">
                       <Form.Label className='fw-bold'>Password</Form.Label>
                       <Form.Control
+                       
                         className='shadow-none'
                         type="password"
                         placeholder="Enter Password"

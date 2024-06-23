@@ -73,7 +73,7 @@ const SearchResults = () => {
      {products.map((product) => (
        <Col key={product.id} xs={12} className="py-3" sm={6} md={4} lg={3}>
          <Link
-           to={`/${product.category.name}/${product._id}`}
+           to={`/moredetails/${product.category.name}/${product._id}`}
            state={{ product: product }}
            className="text-decoration-none"
          >

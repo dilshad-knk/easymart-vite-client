@@ -9,12 +9,14 @@ import {
   Form,
 } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import AddressInfo from '../../components/user/AddressInfo'
+import AddressInfo from "../../components/user/AddressInfo";
 import { CiEdit } from "react-icons/ci";
 import { ToastContainer } from "react-toastify";
+import OrderDetails from "./orderDetails";
 function Profile() {
   const [activeKey, setActiveKey] = useState("#link1");
   const user = useSelector((state) => state.user.user);
+  const [addresses, setAddresses] = useState([]);
 
   const location = window.location.hash;
   const handleSelect = (selectedKey) => {
@@ -31,7 +33,6 @@ function Profile() {
 
   return (
     <Container fluid className="m-1 p-1 ">
-
       <Tab.Container
         id="list-group-tabs-example"
         activeKey={activeKey}
@@ -49,7 +50,7 @@ function Profile() {
                   activeKey === "#link1" ? "bg-primary text-white" : ""
                 }
               >
-                Shipping Address
+              Order Details
               </ListGroup.Item>
               <ListGroup.Item
                 eventKey="#link2"
@@ -57,8 +58,7 @@ function Profile() {
                   activeKey === "#link2" ? "bg-primary text-white" : ""
                 }
               >
-               Account
-                   
+                Shipping Address
               </ListGroup.Item>
               <ListGroup.Item
                 eventKey="#link3"
@@ -66,19 +66,23 @@ function Profile() {
                   activeKey === "#link3" ? "bg-primary text-white" : ""
                 }
               >
-            
-               Order Details
+                Account
               </ListGroup.Item>
             </ListGroup>
           </Col>
           <Col sm={7} className=" flex-grow-1  ms-1">
             <Tab.Content className="py-3">
               <Tab.Pane eventKey="#link1" id="link1">
-              <AddressInfo /> 
+              <OrderDetails/>
               </Tab.Pane>
-              <Tab.Pane eventKey="#link2" id="link2">  <PersonalInfo user={user} /> </Tab.Pane>
+              <Tab.Pane eventKey="#link2" id="link2">
+                <AddressInfo
+                  addresses={addresses}
+                  setAddresses={setAddresses}
+                />{" "}
+              </Tab.Pane>
               <Tab.Pane eventKey="#link3" id="link3">
-               No order Details
+                <PersonalInfo user={user} />
               </Tab.Pane>
             </Tab.Content>
           </Col>
@@ -134,4 +138,3 @@ function PersonalInfo({ user }) {
     </>
   );
 }
-

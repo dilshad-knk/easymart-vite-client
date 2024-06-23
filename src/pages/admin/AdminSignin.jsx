@@ -11,10 +11,10 @@ import { showSuccessAlert, showFailureAlert } from '../../Utils/toastifyAlert';
 function AdminSignin() {
 
     const [validated, setValidated] = useState(false);
-    const [userEmail,setUserEmail] = useState('');
+    const [userEmail,setUserEmail] = useState('dilshad@gmail.com');
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
-    const [userPassword,setuserPassword] = useState('');
+    const [userPassword,setuserPassword] = useState('12345@Aa');
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -93,7 +93,7 @@ function AdminSignin() {
             
             dispatch(adminAuthSuccess(res.data))
 
-            navigate('/admin/dashboard')
+            navigate('/admin')
 
            
           }

@@ -3,6 +3,7 @@ import Home from './Home'
 import displayRazorpay from "../Utils/PaymentGateway";
 
 
+
 const App = () => {
 
   const loadScript = (src) => {
@@ -18,18 +19,30 @@ const App = () => {
       document.body.appendChild(script);
     });
   };
+ 
 
   useEffect(() => {
     loadScript("https://checkout.razorpay.com/v1/checkout.js");
   });
 
+  useEffect(() => {
+    const showAlert = localStorage.getItem('showAlert');
+
+    if (showAlert !== 'false') {
+      
+      alert('admin route : /admin');
+
+      localStorage.setItem('showAlert', 'false');
+    }
+  }, []);
+  
 
   return (
     <div>
 
     <Home/>
     
-    {/* <button onClick={displayRazorpay}>pay </button> */}
+  
       
     </div>
   )

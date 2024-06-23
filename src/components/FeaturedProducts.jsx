@@ -41,7 +41,7 @@ const FeaturedProducts = () => {
     {displayedProducts && displayedProducts.map(product => (
 
     <Col key={product.id} xs={12} className='py-3' sm={6} md={4} lg={3}>
-      <Link to ={`/${product.category.name}/${product._id}`} state={{ product: product }} className='text-decoration-none'>
+      <Link to ={`moredetails/${product.category.name}/${product._id}`} state={{ product: product }} className='text-decoration-none'>
       
                 <Card className='shadow'>
                   <Card.Img variant="top" src={import.meta.env.VITE_SERVER_URL + product.image}   className="custom-card-img p-1"/>

@@ -15,6 +15,7 @@ import PrivacyPolicy from "../pages/user/PrivacyPolicy"
 import TermsCondition from "../pages/user/Terms&Condition"
 import CancellationandREfund from "../pages/user/CancellationandREfund"
 import ShippingPolicy from "../pages/user/ShippingPolicy"
+import OrderConfirmation from "../pages/user/OrderConfirmation"
    
 const UserRoutes = (categories) => {
 
@@ -29,7 +30,7 @@ const UserRoutes = (categories) => {
           element: <CategorySection slug={category.slug} categoryName={category.name} />,
         })),
         {
-          path : "/:slug/:productId",
+          path : "moredetails/:slug/:productId",
           element: <MoreDetails/>
         },
         {path: '/signin',

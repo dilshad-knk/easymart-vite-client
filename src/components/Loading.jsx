@@ -13,7 +13,7 @@ function Loading() {
       </Row>
 
       <Row>
-        <Col className="mb-2">
+        <Col className="">
           <Placeholder  animation="glow">
             <Placeholder xs={12} style={{ height: "400px" }} />
           </Placeholder>
@@ -22,7 +22,7 @@ function Loading() {
 
       <Row>
         {[...Array(8)].map((_, index) => (
-          <Col key={index} xs={6} md={3}  className="grid g-4">
+          <Col key={index} xs={6} md={3}  className="grid g-1">
             <Placeholder animation="glow">
               <Placeholder xs={12} style={{ height: "200px" }} />
             </Placeholder>
@@ -31,7 +31,7 @@ function Loading() {
       </Row>
 
       <Row>
-        <Col className="mt-3">
+        <Col className="mt-2">
         <Placeholder  animation="glow">
             <Placeholder xs={12} style={{ height: "100px" }} />
           </Placeholder>

@@ -10,6 +10,7 @@ import { userLogout } from "../redux/userAuthenticate";
 
 const instance = axios.create({
     baseURL:'https://ecommerce-easymart-back.onrender.com',
+    // baseURL: 'http://localhost:4000',
     withCredentials: true,
 });
 

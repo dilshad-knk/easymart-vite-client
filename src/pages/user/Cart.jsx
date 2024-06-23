@@ -89,7 +89,7 @@ function Cart() {
      
 
     
-        navigate('/checkout', { state: { products, userId } });
+        navigate('/checkout', { state: { products, userId ,totalPrice} });
     
 
     };
@@ -143,7 +143,7 @@ function Cart() {
                 <Col className='my-5 border p-3 h-25 sticky'>
                     <h3>Total Price: </h3><h4> ₹ {totalPrice}</h4>
                      <div className="d-flex align-items-center justify-content-center ">
-                     <Button variant="primary"  className="d-flex align-items-center mt-5 justify-content-center " size="lg" block onClick={handleCheckout}>Check out</Button>
+                     <Button variant="primary" disabled={totalPrice == 0}  className="d-flex align-items-center mt-5 justify-content-center " size="lg" block onClick={handleCheckout}>Check out</Button>
 
                     </div>                   
 

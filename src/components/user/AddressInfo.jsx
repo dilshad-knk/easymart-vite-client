@@ -23,9 +23,8 @@ const schema = yup.object().shape({
   pincode: yup.number().positive().required("required").min(10000, "invalid"),
 });
 
-function AddressInfo() {
+function AddressInfo({addresses, setAddresses}) {
   const [showAddAddress, setShowAddAddress] = useState(false);
-  const [addresses, setAddresses] = useState([]);
   const userId = useSelector((state) => state.user.user.id);
 
   const {

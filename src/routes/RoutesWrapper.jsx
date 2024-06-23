@@ -33,11 +33,11 @@ const RoutesWrapper = () => {
             element: <AdminSignin/>
           },
           {
-            path: "/admin/dashboard",
+            path: "/admin",
             element: <AdminProtected><AdminDashboard/></AdminProtected>
           },
           {
-            path: "/*",
+            path: "*",
             element: <NotFound/>
           },
           

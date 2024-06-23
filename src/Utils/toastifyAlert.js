@@ -7,7 +7,7 @@ export const showSuccessAlert = (message) => {
 
     toast.success(message, {
         position: "top-center",
-        autoClose: 1000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
