@@ -1,4 +1,4 @@
-# EasyMart Store
+# EasyMart Store  https://easymartstore.vercel.app
 
 EasyMart Store is a full-stack eCommerce application that facilitates interactions between sellers and buyers. Sellers can list their products after verification by an admin, and users can browse products, add them to their cart, and complete purchases.
 
