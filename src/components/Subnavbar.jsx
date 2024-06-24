@@ -3,6 +3,7 @@ import {  Dropdown, Nav, Navbar, NavDropdown, NavLink } from "react-bootstrap";
 import useProductCategories from "../Utils/useProductCategories";
 import { Link, } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { BiDownArrow } from "react-icons/bi";
 
 const Subnavbar = () => {
   const categories = useProductCategories();
@@ -63,8 +64,8 @@ const Subnavbar = () => {
         ))}
         {overflowCategories.length > 0 && (
            <Dropdown show={isOpen} onClick={handleMouseEnter} className='position-relative d-flex align-items-center'   >
-            <Dropdown.Toggle as={NavLink} className='text-white d-flex align-items-center '  >
-               <p className="px-2 m-0">More Categories</p>
+            <Dropdown.Toggle as={NavLink} className='text-white d-flex align-items-center  '  >
+               <p className={`px-2 m-0 text-black  ${darkMode && 'text-white' } `}>More Categories {!darkMode && <BiDownArrow className="pb-1"/>}</p>
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu position-absolute" aria-labelledby="dropdown-custom-components"  onMouseLeave={handleMouseLeave}  >
             {overflowCategories.map((category,index) => (
