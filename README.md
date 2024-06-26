@@ -1,8 +1,38 @@
-# React + Vite
+# EasyMart Store  https://easymartstore.vercel.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EasyMart Store is a full-stack eCommerce application that facilitates interactions between sellers and buyers. Sellers can list their products after verification by an admin, and users can browse products, add them to their cart, and complete purchases.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Admin Dashboard:
+
+- Verify seller listings
+- Manage user accounts and permissions
+
+### Seller Dashboard:
+
+- List products for sale
+- Track sales and revenue
+
+### User Dashboard:
+
+- Browse products
+- Add products to cart
+- Complete purchases
+
+## Technologies Used
+
+### Frontend:
+
+- **React.js** with **Vite** for fast development
+- **Redux** for state management
+- **Bootstrap** for styling and responsive design
+- **Axios** for API requests
+- **React Hook Form** for form handling
+- **Redux Toastify** for notifications
+
+### Backend:
+
+- **Express.js** for server-side logic
+- **MongoDB** for database management
+
