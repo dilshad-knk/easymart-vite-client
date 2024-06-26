@@ -14,7 +14,7 @@ export default function AddDeleteEditPC() {
   const [categories, setCategories] = useState([]);
 
 
-  console.log(categories,'use')
+
 
   useEffect(() => {
     fetchCategories();

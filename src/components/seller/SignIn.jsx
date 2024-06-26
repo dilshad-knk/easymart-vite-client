@@ -86,7 +86,6 @@ function SignIn() {
              password: userPassword,
            },{withCredentials: true, 
           })
-           console.log('signin',res)
           
            if(res.data.isSellerAuthenticated){
             dispatch(sellerAuthSuccess(res.data))

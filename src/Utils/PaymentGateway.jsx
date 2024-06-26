@@ -25,8 +25,7 @@ const PaymentGateway = ({amount,onPaymentSuccess,selectedPaymentMethod,confirmat
           return;
         }
 
-        console.log(result);
-
+       
         const options = {
           key: import.meta.env.VITE_KEY_ID,
           amount: result.data.order.amount,

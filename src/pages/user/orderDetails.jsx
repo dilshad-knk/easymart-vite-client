@@ -17,7 +17,7 @@ const OrderDetails = () => {
 
     fetchOrders();
   }, []);
-  console.log(orders);
+  
 
   return (
     <Container className="mt-4">

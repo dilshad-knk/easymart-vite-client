@@ -11,7 +11,7 @@ function SellerAdministration() {
 
   const [pendingSellers, setPendingSellers] = useState([]);
 
-  console.log(pendingSellers)
+  
 
     useEffect(() => {
         fetchPendingSellers();
